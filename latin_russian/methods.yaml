@@ -1,0 +1,88 @@
+methods:
+
+  vjezd_vyezd_shodyaschayasya:
+    passes:
+      - кв: qu
+        кс: x
+        кз: x
+        гз: x
+      - а: a
+        б: b
+        в: v
+        г: g
+        д: d
+        е: e
+        ё: yo
+        ж: zh
+        з: z
+        и: i
+        й: y
+        к: k
+        л: l
+        м: m
+        н: n
+        о: o
+        п: p
+        р: r
+        с: s
+        т: t
+        у: u
+        ф: f
+        х: h
+        ц: c
+        ч: ch
+        ш: sh
+        щ: sch
+        ъ: j
+        ы: y
+        ь: j
+        э: e
+        ю: yu
+        я: ya
+      - hy: h
+        jy: j
+
+  vyezd_vyyezd_shodjaschayasja:
+    passes:
+      - кв: qu
+        кс: x
+        кз: x
+        гз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: g<xt>
+        д: d<xt>
+        е: ye
+        ё: yo
+        ж: zh<xt>
+        з: z<xt>
+        и: i
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: h<xt>
+        ц: c<xt>
+        ч: ch<xt>
+        ш: sh<xt>
+        щ: sch<xt>
+        ъ: j
+        ы: y
+        ь: j
+        э: e
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+        <xt>ye: <xt>e
+      - jy: y
+      - hj: h
+      - <xt>: ''
