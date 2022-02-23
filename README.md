@@ -27,8 +27,8 @@ Prepare your terminal or shell by activating the virtual environment and install
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install --requirement requirements.txt
-pip install --editable .
+pip install --require-virtualenv --requirement requirements.txt
+pip install --require-virtualenv --editable .
 ```
 
 </td></tr>
@@ -38,8 +38,8 @@ pip install --editable .
 ```bash
 python3 -m venv venv
 venv\Scripts\Activate.ps1
-pip install --requirement requirements.txt
-pip install --editable .
+pip install --require-virtualenv --requirement requirements.txt
+pip install --require-virtualenv --editable .
 ```
 
 </td></tr>
@@ -49,8 +49,8 @@ pip install --editable .
 ```bash
 python3 -m venv venv
 venv\Scripts\activate.bat
-pip install --requirement requirements.txt
-pip install --editable .
+pip install --require-virtualenv --requirement requirements.txt
+pip install --require-virtualenv --editable .
 ```
 
 </td></tr>
@@ -62,7 +62,7 @@ pip install --editable .
 Make sure to run the prepare the environment in [Getting started](#getting-started). And then:
 
 ```bash
-pip install --editable .
+pip install --require-virtualenv --editable .
 pytest
 ```
 
@@ -71,7 +71,7 @@ pytest
 Make sure to run the prepare the environment in [Getting started](#getting-started). And then:
 
 ```bash
-pip install --editable .
+pip install --require-virtualenv --editable .
 python -m pyrulatin
 ```
 
