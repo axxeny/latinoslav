@@ -1,4 +1,5 @@
 <p align="center">
+<a href="https://github.com/axxeny/pyrulatin/actions/workflows/python-package.yml"><img alt="Python package" src="https://github.com/axxeny/pyrulatin/actions/workflows/python-package.yml/badge.svg"></a>
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
@@ -11,8 +12,6 @@ This repository is for two things:
 2. An actual project of transliteration of Russian language to latin script. It provides a CLI. I plan to add an HTTP microservice.
 
 # Getting started
-
-This code has been tested with Python 3.10.
 
 Prepare your terminal or shell by activating the virtual environment and installing the necessary packages. Go to this directory by running `cd In this directory:
 
@@ -57,27 +56,37 @@ pip install --require-virtualenv --editable .
 
 </table>
 
-# Run tests
+# Usage
 
-Make sure to run the prepare the environment in [Getting started](#getting-started). And then:
+## Run CLI
+
+Make sure to prepare the environment as in [Getting started](#getting-started). And then:
 
 ```bash
-pip install --require-virtualenv --editable .
+python -m pyrulatin
+```
+
+# Development
+
+## Run tests
+
+Make sure to prepare the environment as in [Getting started](#getting-started). And then:
+
+```bash
 pytest
 ```
 
-# Run CLI
+# Lint code with Flake8
 
-Make sure to run the prepare the environment in [Getting started](#getting-started). And then:
+Make sure to prepare the environment as in [Getting started](#getting-started). And then:
 
 ```bash
-pip install --require-virtualenv --editable .
-python -m pyrulatin
+flake8 --max-line-length=88 src tests setup.py
 ```
 
 # Reformat code with Black
 
-Make sure to run the prepare the environment in [Getting started](#getting-started). And then:
+Make sure to prepare the environment as in [Getting started](#getting-started). And then:
 
 ```bash
 black .
