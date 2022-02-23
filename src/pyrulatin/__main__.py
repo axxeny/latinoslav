@@ -1,4 +1,5 @@
-from pyrulatin.convert import convert, methods
+from pyrulatin.config import config
+from pyrulatin.convert import convert
 import click
 
 
@@ -8,7 +9,7 @@ import click
     "--method",
     prompt="Enter method, please",
     help="Transliteration method (see methods.yaml).",
-    type=click.Choice(list(methods().methods.keys()), case_sensitive=False),
+    type=click.Choice(list(config().methods.keys()), case_sensitive=False),
 )
 def main(method: str) -> None:
     while True:
