@@ -81,7 +81,7 @@ pytest
 Make sure to prepare the environment as in [Getting started](#getting-started). And then:
 
 ```bash
-flake8 --max-line-length=88 src tests setup.py
+flake8 src tests setup.py
 ```
 
 # Reformat code with Black
