@@ -30,6 +30,10 @@ setup(
     packages=find_packages(where="src"),
     package_dir={
         "": "src",
+        "pyrulatin": "src/pyrulatin",
+    },
+    package_data={
+        "pyrulatin": ["config.yaml"],
     },
     python_requires=">=3.9",
     classifiers=[
