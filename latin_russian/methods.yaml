@@ -1,7 +1,8 @@
 methods:
 
   vjezd_vyezd_shodyaschayasya:
-    passes:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
       - кв: qu
         кс: x
         кз: x
@@ -13,7 +14,7 @@ methods:
         д: d
         е: e
         ё: yo
-        ж: zh
+        ж: zh<rlnoy>
         з: z
         и: i
         й: y
@@ -28,22 +29,23 @@ methods:
         т: t
         у: u
         ф: f
-        х: h
+        х: h<rlnoy>
         ц: c
-        ч: ch
-        ш: sh
-        щ: sch
-        ъ: j
+        ч: ch<rlnoy>
+        ш: sh<rlnoy>
+        щ: sch<rlnoy>
+        ъ: j<rlnoy>
         ы: y
-        ь: j
+        ь: j<rlnoy>
         э: e
         ю: yu
         я: ya
-      - hy: h
-        jy: j
+      - <rlnoy>y: ''
+        <rlnoy>: ''
 
   vyezd_vyyezd_shodjaschayasja:
-    passes:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
       - кв: qu
         кс: x
         кз: x
@@ -75,14 +77,53 @@ methods:
         ч: ch<xt>
         ш: sh<xt>
         щ: sch<xt>
-        ъ: j
-        ы: y
-        ь: j
+        ъ: j<rlsep>
+        ь: j<rlsep>
         э: e
         ю: yu
         я: ya
       - <xt>y: <xt>j
         <xt>ye: <xt>e
-      - jy: y
-      - hj: h
-      - <xt>: ''
+        <xt>: ''
+      - ы: y
+      - h<xt>j: h<xt>
+      - j<rlsep>y: y
+      - <rlsep>: ''
+        <xt>: ''
+
+  ето_вьезд_выезд:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      - а: а
+        б: б
+        в: в
+        г: г
+        д: д
+        е: е
+        ё: ё
+        ж: ж
+        з: з
+        и: и
+        й: й
+        к: к
+        л: л
+        м: м
+        н: н
+        о: о
+        п: п
+        р: р
+        с: с
+        т: т
+        у: у
+        ф: ф
+        х: х
+        ц: ц
+        ч: ч
+        ш: ш
+        щ: щ
+        ъ: ь
+        ы: ы
+        ь: ь
+        э: е
+        ю: ю
+        я: я
