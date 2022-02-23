@@ -78,7 +78,7 @@ def _convert_step(text: str, step: dict[str, str]) -> str:
     substrs: list[str] = []
     logger.debug(f"{step = }")
 
-    text = f'{text}<rlend>'
+    text = f"{text}<rlend>"
 
     i, j = 0, 1
     candidate = None
@@ -117,7 +117,6 @@ def _convert_step(text: str, step: dict[str, str]) -> str:
 
             assert False
 
-
     if candidate is not None:
         out.append(step[candidate])
         logger.debug(f"{out = }")
@@ -127,6 +126,6 @@ def _convert_step(text: str, step: dict[str, str]) -> str:
         logger.debug(f"{out = }")
 
     text = "".join(out)
-    text = text.replace('<rlend>', '')
+    text = text.replace("<rlend>", "")
 
     return text
