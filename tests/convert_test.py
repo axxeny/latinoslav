@@ -5,7 +5,7 @@ from pathlib import Path
 
 import yaml
 
-import rulatin.convert as convert
+import pyrulatin.convert as convert
 
 
 sample_text = """\

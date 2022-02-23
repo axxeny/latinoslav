@@ -23,7 +23,7 @@ pytest
 # Reformat code with Black
 
 ```bash
-black rulatin
+black src tests
 ```
 
 # Run CLI
