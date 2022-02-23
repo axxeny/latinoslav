@@ -15,13 +15,35 @@
 
 from setuptools import setup, find_packages
 
+import os.path
+
 
 setup(
+    author="Arseniy Poroshin",
     name="pyrulatin",
-    packages=find_packages(where="src"),
-    package_dir={
-        "": "src",
-    },
-    python_requires=">=3.9",
+    version="0.1.0",
+    description="Transliterate Russian language to latin script. CLI. In the future: http microservice",
+    url="https://github.com/axxeny/pyrulatin",
+    include_package_data=True,
     install_requires=["click", "pygtrie", "pydantic", "PyYAML"],
+    packages=["pyrulatin"],
+    package_dir={"pyrulatin": "src/pyrulatin"},
+    package_data={"pyrulatin": ["config.yaml"]},
+    python_requires=">=3.9",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Environment :: Console",
+        "Intended Audience :: Education",
+        "License :: OSI Approved :: Apache Software License",
+        "Natural Language :: Russian",
+        "Operating System :: MacOS",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Topic :: Text Processing :: Linguistic",
+        "Typing :: Typed",
+    ],
 )
