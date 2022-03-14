@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://github.com/axxeny/pyrulatin/actions/workflows/python-package.yml"><img alt="Python package" src="https://github.com/axxeny/pyrulatin/actions/workflows/python-package.yml/badge.svg"></a>
+<a href="https://github.com/axxeny/latinoslav/actions/workflows/python-package.yml"><img alt="Python package" src="https://github.com/axxeny/latinoslav/actions/workflows/python-package.yml/badge.svg"></a>
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 </p>
 
@@ -9,7 +9,7 @@ This repository is for two things:
 
 1. Demostrate a good practice Python work pipeline (with unit testing, isolated virtual environment, src and tests separation).
 
-2. An actual project of transliteration of Russian language to latin script. It provides a CLI. I plan to add an HTTP microservice.
+2. An actual project of transliteration of Russian and Ukrainian languages to latin script. It provides a CLI. I plan to add an HTTP microservice.
 
 # Getting started
 
@@ -63,7 +63,7 @@ pip install --require-virtualenv --editable .
 Make sure to prepare the environment as in [Getting started](#getting-started). And then:
 
 ```bash
-python -m pyrulatin
+python -m latinoslav
 ```
 
 # Development

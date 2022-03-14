@@ -19,7 +19,7 @@ from enum import Enum
 
 from pygtrie import CharTrie
 
-from pyrulatin.config import config
+from latinoslav.config import config
 
 
 logger = logging.getLogger(__name__)

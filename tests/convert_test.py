@@ -19,10 +19,10 @@ from pathlib import Path
 
 import yaml
 
-import pyrulatin.convert as convert
+import latinoslav.convert as convert
 
 
-sample_text = """\
+sample_ru_text = """\
 Съешь же ещё этих мягких французских булок, да выпей чаю.
 Кстати, отличная квартирка для экзамена на карантине!
 Въезд, выезд.
@@ -31,8 +31,32 @@ English text in hotel hyatt.
 """
 
 
+sample_uk_text = """\
+В Бахчисараї фельд'єґер зумів одягнути ящірці жовтий капюшон!
+Українська абетка має 33 літери:
+а, б, в, г, ґ, д, е, є, ж, з, и, і, ї, й, к, л, м, н, о, п, р, с, т, у, ф,
+х, ц, ч, ш, щ, ь, ю, я.
+Інколи також до неї зараховують апостроф ('), що має фонетичне значення
+і є обов'язковим знаком на письмі,
+але літерою не вважається та формально до абетки не входить.
+English text in hotel Hyatt.
+"""
+
+
+sample_uk_out = """\
+V Bakhchysarayi feljdyeger zumiv odjahnuty yashchirci zhovtyy kapjushon!
+Ukrayinsjka abetka maye 33 litery:
+a, b, v, h, g, d, e, ye, zh, z, y, i, yi, y, k, l, m, n, o, p, r, s, t, u, f,
+kh, c, ch, sh, shch, j, yu, ya.
+Inkoly takozh do neyi zarakhovuyutj apostrof ('), shcho maye fonetychne znachennja
+i ye obovyazkovym znakom na pysjmi,
+ale literoyu ne vvazhayetjsja ta formaljno do abetky ne vkhodytj.
+English text in hotel Hyatt.
+"""
+
+
 @pytest.fixture
-def sample_out():
+def sample_ru_out():
     with Path("tests", "sample_out.yaml").open() as f:
         return yaml.safe_load(f)
 
@@ -41,9 +65,15 @@ def sample_out():
     "method",
     ["vjezd_vyezd_shodyaschayasya", "vyezd_vyyezd_shodjaschayasja", "ето_вьезд_выезд"],
 )
-def test_convert(method, sample_out):
-    actual = convert.convert(sample_text, method)
-    expected = sample_out[method]
+def test_convert_ru(method, sample_ru_out):
+    actual = convert.convert(sample_ru_text, method)
+    expected = sample_ru_out[method]
+    assert expected == actual
+
+
+def test_convert_uk():
+    actual = convert.convert(sample_uk_text, "uk1")
+    expected = sample_uk_out
     assert expected == actual
 
 

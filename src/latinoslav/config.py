@@ -20,7 +20,7 @@ from threading import Lock
 import yaml
 from pydantic import BaseModel
 
-import pyrulatin
+import latinoslav
 
 
 config_lock = Lock()
@@ -37,7 +37,7 @@ class Config(BaseModel):
 
 @cache
 def _config():
-    config_str = resources.read_text(pyrulatin, "config.yaml")
+    config_str = resources.read_text(latinoslav, "config.yaml")
     d = yaml.safe_load(config_str)
     return Config(**d)
 

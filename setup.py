@@ -18,22 +18,22 @@ from setuptools import setup, find_packages
 
 setup(
     author="Arseniy Poroshin",
-    name="pyrulatin",
+    name="latinoslav",
     version="0.1.0",
     description=(
-        "Transliterate Russian language to latin script. Now: CLI."
+        "Transliterate Russian or Ukrainian language to latin script. Now: CLI."
         " Planning: an HTTP microservice, as well."
     ),
-    url="https://github.com/axxeny/pyrulatin",
+    url="https://github.com/axxeny/latinoslav",
     include_package_data=True,
     install_requires=["click", "pygtrie", "pydantic", "PyYAML"],
     packages=find_packages(where="src"),
     package_dir={
         "": "src",
-        "pyrulatin": "src/pyrulatin",
+        "latinoslav": "src/latinoslav",
     },
     package_data={
-        "pyrulatin": ["config.yaml"],
+        "latinoslav": ["config.yaml"],
     },
     python_requires=">=3.9",
     classifiers=[
@@ -42,6 +42,7 @@ setup(
         "Intended Audience :: Education",
         "License :: OSI Approved :: Apache Software License",
         "Natural Language :: Russian",
+        "Natural Language :: Ukrainian",
         "Operating System :: MacOS",
         "Operating System :: Microsoft :: Windows",
         "Operating System :: POSIX",

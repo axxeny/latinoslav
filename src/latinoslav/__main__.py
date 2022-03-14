@@ -13,8 +13,8 @@
 #  limitations under the License.
 
 
-from pyrulatin.config import config
-from pyrulatin.convert import convert
+from latinoslav.config import config
+from latinoslav.convert import convert
 import click
 
 
