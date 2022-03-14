@@ -106,6 +106,55 @@ methods:
       - <rlsep>: ''
         <xt>: ''
 
+  uk1:
+    word_pattern: "[А-ЩЬЮЯҐЄІЇа-щьюяґєії'`’ʼ]"
+    steps:
+      - кв: qu
+        кс: x
+        кз: x
+        ґз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: h<xt>
+        ґ: g<xt>
+        д: d<xt>
+        е: e
+        є: ye
+        ж: zh<xt>
+        з: z<xt>
+        і: i
+        ї: yi
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: kh<xt>
+        ц: c<xt>
+        ч: ch<xt>
+        ш: sh<xt>
+        щ: shch<xt>
+        ь: j
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+        <xt>: ''
+      - и: y
+      - h<xt>j: h<xt>
+      - "<xt>'": "<xt>"
+        "<xt>`": "<xt>"
+        "<xt>’": "<xt>"
+        "<xt>ʼ": "<xt>"
+      - <xt>: ''
+
   ето_вьезд_выезд:
     word_pattern: '[А-ЯЁа-яё]'
     steps:
