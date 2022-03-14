@@ -13,7 +13,13 @@ This repository is for two things:
 
 # Getting started
 
-Prepare your terminal or shell by activating the virtual environment and installing the necessary packages. Go to this directory by running `cd In this directory:
+Clone this repository and go to the repository directory:
+```bash
+git clone git@github.com:axxeny/latinoslav.git
+cd latinoslav
+```
+
+Prepare your terminal or shell by activating the virtual environment and installing the necessary packages. In this directory:
 
 <table>
     <tr>
