@@ -15,7 +15,7 @@
 
 methods:
 
-  vjezd_vyezd_shodyaschayasya:
+  ru_sjeshj_zhe_escho_etih:
     word_pattern: '[А-ЯЁа-яё]'
     steps:
       - кв: qu
@@ -58,7 +58,7 @@ methods:
       - <rlnoy>y: ''
         <rlnoy>: ''
 
-  vyezd_vyyezd_shodjaschayasja:
+  ru_syeshj_zhe_yescho_etih:
     word_pattern: '[А-ЯЁа-яё]'
     steps:
       - кв: qu
@@ -105,6 +105,61 @@ methods:
       - j<rlsep>y: y
       - <rlsep>: ''
         <xt>: ''
+
+  ru_syešj_že_yesčo_etih:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      - кв: qu
+        кс: x
+        кз: x
+        гз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: g<xt>
+        д: d<xt>
+        е: ye
+        ё: yo
+        ж: ž<shxt><xt>
+        з: z<xt>
+        и: i
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: h<xt>
+        ц: c<xt>
+        ч: č<shxt><xt>
+        ш: š<shxt><xt>
+        щ: sč<shxt><xt>
+        ъ: j<rlsep>
+        ь: j<rlsep>
+        э: e
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+        <xt>ya: <xt>ä
+        <xt>ye: <xt>e
+        <xt>yo: <xt>ö
+        <xt>yu: <xt>ü
+        <xt>: ''
+      - ы: y
+      - <shxt><xt>j: <shxt><xt>
+        <shxt><xt>ä: <shxt><xt>a
+        <shxt><xt>ö: <shxt><xt>o
+        <shxt><xt>ü: <shxt><xt>u
+      - j<rlsep>y: y
+      - <rlsep>: ''
+        <xt>: ''
+        <shxt>: ''
 
   uk1:
     word_pattern: "[А-ЩЬЮЯҐЄІЇа-щьюяґєії'`’ʼ]"
@@ -154,7 +209,109 @@ methods:
         "<xt>ʼ": "<xt>"
       - <xt>: ''
 
-  ето_вьезд_выезд:
+  uk2:
+    word_pattern: "[А-ЩЬЮЯҐЄІЇа-щьюяґєії'`’ʼ]"
+    steps:
+      - кв: qu
+        кс: x
+        кз: x
+        ґз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: h<xt>
+        ґ: g<xt>
+        д: d<xt>
+        е: e
+        є: ye
+        ж: zh<xt>
+        з: z<xt>
+        і: i
+        ї: ï
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: kh<xt>
+        ц: c<xt>
+        ч: ch<xt>
+        ш: sh<xt>
+        щ: shch<xt>
+        ь: j
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+      - и: y
+      - h<xt>j: h<xt>
+      - "<xt>'": "<xt>"
+        "<xt>`": "<xt>"
+        "<xt>’": "<xt>"
+        "<xt>ʼ": "<xt>"
+      - <xt>: ''
+
+  uk3:
+    word_pattern: "[А-ЩЬЮЯҐЄІЇа-щьюяґєії'`’ʼ]"
+    steps:
+      - кв: qu
+        кс: x
+        кз: x
+        ґз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: h<xt>
+        ґ: g<xt>
+        д: d<xt>
+        е: e
+        є: ye
+        ж: ž<xt>
+        з: z<xt>
+        і: i
+        ї: ï
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: kh<xt>
+        ц: c<xt>
+        ч: č<xt>
+        ш: š<xt>
+        щ: šč<xt>
+        ь: j
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+        <xt>ya: <xt>ä
+        <xt>ye: <xt>ë
+        <xt>yu: <xt>ü
+      - и: y
+      - h<xt>j: h<xt>
+        h<xt>ä: h<xt>a
+        h<xt>ë: h<xt>e
+        h<xt>ü: h<xt>u
+      - "<xt>'": "<xt>"
+        "<xt>`": "<xt>"
+        "<xt>’": "<xt>"
+        "<xt>ʼ": "<xt>"
+      - <xt>: ''
+
+  ru_сьешь_же_ещё_етих:
     word_pattern: '[А-ЯЁа-яё]'
     steps:
       - а: а

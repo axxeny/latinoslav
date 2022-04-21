@@ -22,7 +22,7 @@ import yaml
 import latinoslav.convert as convert
 
 
-sample_ru_text = """\
+ru_sample_text = """\
 Съешь же ещё этих мягких французских булок, да выпей чаю.
 Кстати, отличная квартирка для экзамена на карантине!
 Въезд, выезд.
@@ -31,7 +31,7 @@ English text in hotel hyatt.
 """
 
 
-sample_uk_text = """\
+uk_sample_text = """\
 В Бахчисараї фельд'єґер зумів одягнути ящірці жовтий капюшон!
 Українська абетка має 33 літери:
 а, б, в, г, ґ, д, е, є, ж, з, и, і, ї, й, к, л, м, н, о, п, р, с, т, у, ф,
@@ -43,37 +43,45 @@ English text in hotel Hyatt.
 """
 
 
-sample_uk_out = """\
-V Bakhchysarayi feljdyeger zumiv odjahnuty yashchirci zhovtyy kapjushon!
-Ukrayinsjka abetka maye 33 litery:
-a, b, v, h, g, d, e, ye, zh, z, y, i, yi, y, k, l, m, n, o, p, r, s, t, u, f,
-kh, c, ch, sh, shch, j, yu, ya.
-Inkoly takozh do neyi zarakhovuyutj apostrof ('), shcho maye fonetychne znachennja
-i ye obovyazkovym znakom na pysjmi,
-ale literoyu ne vvazhayetjsja ta formaljno do abetky ne vkhodytj.
-English text in hotel Hyatt.
-"""
+def ru_transform_names():
+    with Path("tests", "ru_sample_out.yaml").open() as f:
+        return yaml.safe_load(f).keys()
+
+
+def uk_transform_names():
+    with Path("tests", "uk_sample_out.yaml").open() as f:
+        return yaml.safe_load(f).keys()
 
 
 @pytest.fixture
-def sample_ru_out():
-    with Path("tests", "sample_out.yaml").open() as f:
+def ru_sample_out():
+    with Path("tests", "ru_sample_out.yaml").open() as f:
+        return yaml.safe_load(f)
+
+
+@pytest.fixture
+def uk_sample_out():
+    with Path("tests", "uk_sample_out.yaml").open() as f:
         return yaml.safe_load(f)
 
 
 @pytest.mark.parametrize(
     "method",
-    ["vjezd_vyezd_shodyaschayasya", "vyezd_vyyezd_shodjaschayasja", "ето_вьезд_выезд"],
+    ru_transform_names(),
 )
-def test_convert_ru(method, sample_ru_out):
-    actual = convert.convert(sample_ru_text, method)
-    expected = sample_ru_out[method]
+def test_convert_ru(method, ru_sample_out):
+    actual = convert.convert(ru_sample_text, method)
+    expected = ru_sample_out[method]
     assert expected == actual
 
 
-def test_convert_uk():
-    actual = convert.convert(sample_uk_text, "uk1")
-    expected = sample_uk_out
+@pytest.mark.parametrize(
+    "method",
+    ["uk1", "uk2", "uk3"],
+)
+def test_convert_uk(method, uk_sample_out):
+    actual = convert.convert(uk_sample_text, method)
+    expected = uk_sample_out[method]
     assert expected == actual
 
 

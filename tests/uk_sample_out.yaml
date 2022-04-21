@@ -1,0 +1,42 @@
+#  Copyright 2022 Arseniy Poroshin
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+
+uk1: |
+  V Bakhchysarayi feljdyeger zumiv odjahnuty yashchirci zhovtyy kapjushon!
+  Ukrayinsjka abetka maye 33 litery:
+  a, b, v, h, g, d, e, ye, zh, z, y, i, yi, y, k, l, m, n, o, p, r, s, t, u, f,
+  kh, c, ch, sh, shch, j, yu, ya.
+  Inkoly takozh do neyi zarakhovuyutj apostrof ('), shcho maye fonetychne znachennja
+  i ye obovyazkovym znakom na pysjmi,
+  ale literoyu ne vvazhayetjsja ta formaljno do abetky ne vkhodytj.
+  English text in hotel Hyatt.
+uk2: |
+  V Bakhchysaraï feljdyeger zumiv odjahnuty yashchirci zhovtyy kapjushon!
+  Ukraïnsjka abetka maye 33 litery:
+  a, b, v, h, g, d, e, ye, zh, z, y, i, ï, y, k, l, m, n, o, p, r, s, t, u, f,
+  kh, c, ch, sh, shch, j, yu, ya.
+  Inkoly takozh do neï zarakhovuyutj apostrof ('), shcho maye fonetychne znachennja
+  i ye obovyazkovym znakom na pysjmi,
+  ale literoyu ne vvazhayetjsja ta formaljno do abetky ne vkhodytj.
+  English text in hotel Hyatt.
+uk3: |
+  V Bakhčysaraï feljdyeger zumiv odähnuty yaščirci žovtyy kapüšon!
+  Ukraïnsjka abetka maye 33 litery:
+  a, b, v, h, g, d, e, ye, ž, z, y, i, ï, y, k, l, m, n, o, p, r, s, t, u, f,
+  kh, c, č, š, šč, j, yu, ya.
+  Inkoly takož do neï zarakhovuyutj apostrof ('), ščo maye fonetyčne značennä
+  i ye obovyazkovym znakom na pysjmi,
+  ale literoyu ne vvažayetjsä ta formaljno do abetky ne vkhodytj.
+  English text in hotel Hyatt.
