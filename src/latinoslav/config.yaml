@@ -161,6 +161,68 @@ methods:
         <xt>: ''
         <shxt>: ''
 
+  ru_syešj_že_yesčo_etih_mägkih_françuzskih:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      - кв: <hc>qu
+        кс: <hc>x
+        кз: <hc>x
+        гз: <hc>x
+      - а: <hc>a
+        б: <hc>b<xt>
+        в: <hc>v<xt>
+        г: <hc>g<xt>
+        д: <hc>d<xt>
+        е: <sc>ye
+        ё: <sc>yo
+        ж: <hc>ž<shxt><xt>
+        з: <hc>z<xt>
+        и: <sc>i
+        й: <sc>y<xt>
+        к: <hc>k<xt>
+        л: <hc>l<xt>
+        м: <hc>m<xt>
+        н: <hc>n<xt>
+        о: <hc>o
+        п: <hc>p<xt>
+        р: <hc>r<xt>
+        с: <hc>s<xt>
+        т: <hc>t<xt>
+        у: <hc>u
+        ф: <hc>f<xt>
+        х: <hc>h<xt>
+        ц: <hc>ç<xt>
+        ч: <hc>č<shxt><xt>
+        ш: <hc>š<shxt><xt>
+        щ: <hc>šč<shxt><xt>
+        ъ: <sc>j<rlsep>
+        ь: <sc>j<rlsep>
+        э: <sc>e
+        ю: <sc>yu
+        я: <sc>ya
+      - <xt>y: <xt>j
+        <xt>ya: <xt>ä
+        <xt>ye: <xt>e
+        <xt>yo: <xt>ö
+        <xt>yu: <xt>ü
+        <xt>: ''
+      - ы: y
+      - <shxt><xt>j: <shxt><xt>
+        <shxt><xt>ä: <shxt><xt>a
+        <shxt><xt>ö: <shxt><xt>o
+        <shxt><xt>ü: <shxt><xt>u
+      - j<rlsep>y: y
+      - k<hc>: c<hc>
+        ç<sc>: c<sc>
+      - <rlsep>: ''
+        <xt>: ''
+        <shxt>: ''
+        <hc>: ''
+        <sc>: ''
+      - # should be any stem ending with a k.
+        scaya: skaya
+        scoye: skoye
+
   uk1:
     word_pattern: "[А-ЩЬЮЯҐЄІЇа-щьюяґєії'`’ʼ]"
     steps:
