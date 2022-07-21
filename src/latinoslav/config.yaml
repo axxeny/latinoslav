@@ -94,6 +94,7 @@ methods:
         щ: sch<xt>
         ъ: j<rlsep>
         ь: j<rlsep>
+        ьи: j<rlsep>yi
         э: e
         ю: yu
         я: ya
@@ -102,6 +103,56 @@ methods:
         <xt>: ''
       - ы: y
       - h<xt>j: h<xt>
+      - j<rlsep>y: y
+      - <rlsep>: ''
+        <xt>: ''
+
+  ru_ji:
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      - кв: qu
+        кс: x
+        кз: x
+        гз: x
+      - а: a
+        б: b<xt>
+        в: v<xt>
+        г: g<xt>
+        д: d<xt>
+        е: ye
+        ё: yo
+        ж: zh<xt>
+        з: z<xt>
+        и: i
+        й: y<xt>
+        к: k<xt>
+        л: l<xt>
+        м: m<xt>
+        н: n<xt>
+        о: o
+        п: p<xt>
+        р: r<xt>
+        с: s<xt>
+        т: t<xt>
+        у: u
+        ф: f<xt>
+        х: h<xt>
+        ц: c<xt>
+        ч: ch<xt>
+        ш: sh<xt>
+        щ: sch<xt>
+        ъ: j<rlsep>
+        ы: ji
+        ь: j<rlsep>
+        ьи: j<rlsep>yi
+        э: e
+        ю: yu
+        я: ya
+      - <xt>y: <xt>j
+        <xt>ye: <xt>e
+        <xt>: ''
+      - c<xt>j: h<xt>
+        h<xt>j: h<xt>
       - j<rlsep>y: y
       - <rlsep>: ''
         <xt>: ''
@@ -142,6 +193,7 @@ methods:
         щ: sč<shxt><xt>
         ъ: j<rlsep>
         ь: j<rlsep>
+        ьи: j<rlsep>yi
         э: e
         ю: yu
         я: ya
