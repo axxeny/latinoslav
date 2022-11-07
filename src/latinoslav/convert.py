@@ -129,4 +129,6 @@ def _restore_upper_case(lower_word: str) -> str:
 
 
 def _restore_title_case(lower_word: str) -> str:
-    return lower_word.title()
+    if not lower_word:
+        return lower_word
+    return lower_word[0].upper() + lower_word[1:].lower()

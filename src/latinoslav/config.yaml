@@ -15,6 +15,51 @@
 
 methods:
 
+  "ru_s'esh_je_yeshë_etih":
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      - кс: x
+        кз: x
+        гз: x
+      - а: <lsvwl>a
+        б: b
+        в: v
+        г: g
+        д: d
+        е: <lsvwl>e
+        ё: <lsvwl>ë
+        ж: j
+        з: z
+        и: <lsvwl>i
+        ий: <lsvwl>y
+        й: y
+        к: k
+        л: l
+        м: m
+        н: n
+        о: <lsvwl>o
+        п: p
+        р: r
+        с: s
+        т: t
+        у: <lsvwl>u
+        ф: f
+        х: h
+        ц: c
+        ч: ch
+        ш: sh
+        щ: sh
+        ъ: <lssep>
+        ы: <lsvwl>i
+        ый: <lsvwl>y
+        ь: <lssep>
+        э: <lsvwl>e
+        ю: <lsvwl>ü
+        я: <lsvwl>ä
+      - <lssep><lsvwl>: "'"
+      - <lssep>: ''
+        <lsvwl>: ''
+
   ru_sjeshj_zhe_escho_etih:
     word_pattern: '[А-ЯЁа-яё]'
     steps:
