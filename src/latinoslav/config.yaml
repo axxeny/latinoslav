@@ -15,6 +15,67 @@
 
 methods:
 
+  ru21:  # 21 letters in the alphabet. And an apostrophe.
+    word_pattern: '[А-ЯЁа-яё]'
+    steps:
+      # Additional exceptions should go here, at the top.
+      - зх: z'h
+        сх: s'h
+        цх: c'h
+      - а: a
+        б: b
+        в: v
+        г: g
+        д: d
+        е: e
+        ё: e
+        ж: zh
+        з: z
+        и: i
+        к: k
+        л: l
+        м: m
+        н: n
+        о: o
+        п: p
+        р: r
+        с: s
+        т: t
+        у: u
+        ф: f
+        х: h
+        ц: c
+        ч: ch
+        ш: sh
+        щ: sh
+        ъ: <lssep>
+        ы: i
+        ь: <lssep>
+        э: e
+      - ai: a'i
+        ei: e'i
+        ia: i'a
+        ii: i'i
+        io: i'o
+        iu: i'u
+        oi: o'i
+        ui: u'i
+      - ai: a'i
+        ei: e'i
+        ia: i'a
+        ii: i'i
+        io: i'o
+        iu: i'u
+        oi: o'i
+        ui: u'i
+      - й: i
+        ю: iu
+        я: ia
+      - <lssep>e: "'e"
+        <lssep>i: "'i"
+      - <lssep>: ""
+
+
   "ru_s'esh_je_yeshë_etih":
     word_pattern: '[А-ЯЁа-яё]'
     steps:
