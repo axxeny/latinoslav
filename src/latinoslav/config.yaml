@@ -507,3 +507,17 @@ methods:
         э: е
         ю: ю
         я: я
+
+  "en-jqxz":
+    word_pattern: [A-Za-z]
+    steps:
+      - ja: gia
+        je: ge
+        ji: gi
+        jo: gio
+        ju: giu
+        jy: gy
+        x: cs
+        qu: cw
+        z: s
+      - j: dge
